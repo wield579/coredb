@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model List<Product>
+
+<div class="text-center">
+    <h1 class="display-4">Product</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+<ul>
+    @foreach (var Product in Model)
+    {
+        <li>@Product.NM_Product / @Product.Amount</li>
+    }
+</ul>
